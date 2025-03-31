@@ -29,23 +29,23 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-16 px-4 md:px-6 bg-white">
+    <section id="about" className="py-8 sm:py-12 md:py-16 px-4 md:px-6 bg-white">
       <div className="container mx-auto">
-        <div className="max-w-2xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">关于我</h2>
-          <p className="text-lg text-gray-700">
+        <div className="max-w-2xl mx-auto text-center mb-6 sm:mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">关于我</h2>
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 px-4 sm:px-0">
             作为一名AI产品经理，我致力于设计以人为本的AI解决方案，平衡技术创新与用户需求，创造出既智能又易用的产品体验。
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mt-6 sm:mt-8 md:mt-10 max-w-6xl mx-auto">
           {skills.map((skill, index) => (
-            <Card key={index} className="hover:-translate-y-2 transition-transform duration-300 hover:bg-[#fffaeb]">
-              <CardHeader className="bg-[#FCD40B] border-b-2 border-black">
-                <CardTitle className="font-bold text-black">{skill.title}</CardTitle>
+            <Card key={index} className="hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300 hover:bg-[#fffaeb]">
+              <CardHeader className="bg-[#FCD40B] border-b-2 border-black p-3 sm:p-4 md:p-6">
+                <CardTitle className="font-bold text-black text-base sm:text-lg md:text-xl">{skill.title}</CardTitle>
               </CardHeader>
-              <CardContent className="pt-4">
-                <p className="text-gray-800 font-medium">{skill.description}</p>
+              <CardContent className="p-3 sm:p-4 md:p-6">
+                <p className="text-xs sm:text-sm md:text-base text-gray-800 font-medium">{skill.description}</p>
               </CardContent>
             </Card>
           ))}

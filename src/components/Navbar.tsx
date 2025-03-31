@@ -30,7 +30,6 @@ export function Navbar() {
             <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="font-medium hover:text-[#FCD40B] transition-colors">关于</a>
             <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} className="font-medium hover:text-[#FCD40B] transition-colors">项目</a>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="font-medium hover:text-[#FCD40B] transition-colors">联系</a>
-            <Button size="sm" className="font-bold">简历下载</Button>
           </nav>
 
           {/* Mobile Menu Button */}

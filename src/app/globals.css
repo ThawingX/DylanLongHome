@@ -79,6 +79,31 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* 响应式工具类 */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* 移动端优化 */
+@media (max-width: 640px) {
+  :root {
+    --shadow-offset: 3px;
+  }
+  
+  .neobrutalism-shadow {
+    box-shadow: 3px 3px 0 0 black;
+  }
+  
+  .neobrutalism-shadow:hover {
+    box-shadow: 5px 5px 0 0 black;
+  }
 }
 
 @tailwind utilities;
